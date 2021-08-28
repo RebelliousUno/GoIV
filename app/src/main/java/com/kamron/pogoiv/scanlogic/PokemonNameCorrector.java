@@ -3,7 +3,7 @@ package com.kamron.pogoiv.scanlogic;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.common.base.Optional;
 
@@ -15,6 +15,7 @@ import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 import lombok.AllArgsConstructor;
 
@@ -496,5 +497,6 @@ public class PokemonNameCorrector {
          * Since it's a distance, the smaller it is the closer is the match.
          */
         public final int dist;
+
     }
 }
