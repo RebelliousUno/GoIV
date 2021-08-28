@@ -2,7 +2,7 @@ package com.kamron.pogoiv.widgets.recyclerviews.adapters;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -91,7 +91,7 @@ public class IVResultsAdapter extends RecyclerView.Adapter<IVResultsAdapter.Resu
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
-                    pokefly.addSpecificIVClipboard(dataSet.get(getAdapterPosition()));
+                    pokefly.addSpecificIVClipboard(dataSet.get(getBindingAdapterPosition()));
                     IVResultsAdapter.this.notifyDataSetChanged();
                 }
             });

@@ -5,8 +5,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.NonNull;
-import android.support.v4.widget.Space;
+import androidx.annotation.NonNull;
+
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -86,7 +86,7 @@ public class InputFraction extends Fraction implements ReactiveColorListener {
 
     //PokeSpam
     @BindView(R.id.llPokeSpamSpace)
-    Space llPokeSpamSpace;
+    View llPokeSpamSpace;
     @BindView(R.id.llPokeSpamDialogInputContentBox)
     LinearLayout pokeSpamDialogInputContentBox;
 
